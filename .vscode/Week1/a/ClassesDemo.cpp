@@ -9,7 +9,7 @@ int main(){
     // declare a string object named myWord
     string myWord;
     // declare an Airplane with any identifier you want
-    Airplane yourName;
+    Airplane yourname(10, 100, "Boeing 727", 0.9);
     // Declare 3 airplanes, a, b, c
     Airplane a, b, c;
     // Declare an array of 999 Airplanes

@@ -23,6 +23,17 @@ class Airplane{
         string model;
         float fuel;
 
+            // Define a constructor for this class
+                // inputs will be all values for attributes
+                    // numPassengers, maxPassengers, model, fuel
+                // give default values for these inputs
+                Airplane(int numP = 0, int maxP = 500, string m = "plane", float f = 0.8){
+                    numPass = numP;
+                    maxPass = maxP;
+                    model = m;
+                    fuel = f;
+                }
+
         // define a method print() that will display Airplane
             // attributes
         void print(){
