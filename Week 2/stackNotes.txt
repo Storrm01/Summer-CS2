@@ -1,0 +1,27 @@
+Stack Array (FILO - First In, Last Out)
+
+arr = {"first"  "second" "third"}
+         0         1        2
+
+To resize a dynamic array:
+STEP 1 - create a new array with the new size
+    EX: new size is 5
+arr2 = {__ __ __ __ __}
+
+STEP 2 - copy *each* element from the old array to the new array
+DONT DO THIS ==> arr2 = arr;
+*** use a loop!
+
+STEP 3 - now we have:
+    arr = {"first"  "second" "third"}
+    arr2 = {"first"  "second" "third" ________ _______}
+
+----> delete the old array
+
+STEP 4 - now we have:
+    arr = ...(nothing)...
+    arr2 = {"first"  "second" "third" ________ _______}
+
+arr = arr2;
+
+Now arr is a larger array with 5 items!
