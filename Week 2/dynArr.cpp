@@ -32,4 +32,23 @@ int main(){
     ralph.insert(88); // this should not be added
 
     ralph.print();
+
+
+    ralph.pop();
+
+    ralph.print();
+
+    ralph.pop();
+    ralph.pop();
+    ralph.print(); // empty?
+
+    ralph.pop(); // numItems is -1?
+    ralph.pop(); // numItems is -2?
+
+    ralph.print();
+
+    ralph.insert(99);
+    ralph.insert(42);
+    ralph.insert(101);
+    ralph.insert(808);
 }

@@ -38,10 +38,11 @@ class Stack{
     void insert(int val){
         // put it on the Stack (if the stack is not full)
         if(numItems == capacity){
-            cout << "The array is full!" << endl;
+            // cout << "The array is full!" << endl;
             // instead of an error message, we want to make the stack larger when it's full
+            cout << "Resizing..." << endl;
+            resize(); // double the capacity of arr
         }
-        else{
             // update the number of items
             arr[numItems] = val;
             numItems++;
@@ -49,7 +50,7 @@ class Stack{
             print();
         }
         //update the Number of items
-    }
+
     // define a method resize() that wil change the size of the array
         // input boolean parameter "grow" with default true
     void resize(bool grow = true){
@@ -67,7 +68,7 @@ class Stack{
         // STEP 1 - new array
         int *tempArr = new int[newCap];
 
-        // STEP 2 - copy everything oer
+        // STEP 2 - copy everything over
         for(int i = 0; i < numItems; i++){
             // grab old thing, assign to new thing
             tempArr[i] = arr[i];
@@ -77,6 +78,22 @@ class Stack{
         delete [] arr;
 
         // STEP 4 - make arr take us to the new array
+        capacity = newCap;
         arr = tempArr;
     }
+
+    // define a method "pop" which will decrease the number of items in the stack
+        // if the number of items drops below half of the capacity, resize the array down (shrink)
+    void pop(){
+        if(numItems == 0){
+            cout << "Stack is empty!" << endl;
+            return;
+        }
+        numItems--; // decrease the current count of items
+        if(numItems < capacity / 2){
+            cout << "Resizing array down to " << capacity / 2 << " capacity!" << endl;
+            resize(false);
+        }
+    }
+
 };
