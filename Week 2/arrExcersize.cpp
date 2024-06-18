@@ -12,7 +12,7 @@ int main(){
 
     // print everything in the array, except for the location of the pointer above
         // you cannot use "randIndex" here to skip
-    if(){
+    if(dontPrint == true){
         
     }
 
