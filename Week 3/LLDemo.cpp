@@ -1,7 +1,7 @@
 #include<iostream>
 using namespace std;
 
-#inlcude "LL.h"
+#include "LL.h"
 
 int main(){
     // use dynamic allocation to create a brand new integer
