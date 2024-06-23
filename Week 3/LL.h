@@ -97,18 +97,18 @@ class LinkedList{
         }
     }
 
-    void insertNext(int target, int newVal){
-        for(LLNode *current = head; current != nullptr; current = current -> next){
-            // is this the target?
-            if(current->data == target){
-                // add a new node with newVal after the current node
-                // STEP 1: make a brand new node with newVal
+    // void insertNext(int target, int newVal){
+    //     for(LLNode *current = head; current != nullptr; current = current -> next){
+    //         // is this the target?
+    //         if(current->data == target){
+    //             // add a new node with newVal after the current node
+    //             // STEP 1: make a brand new node with newVal
 
-                // STEP 2: connect your new node to the next node in the List
+    //             // STEP 2: connect your new node to the next node in the List
 
-                // STEP 3: connect your current node to the new node
+    //             // STEP 3: connect your current node to the new node
                 
-            }
-        }
-    }
+    //         }
+    //     }
+    // }
 };
