@@ -75,7 +75,8 @@ int main(){
 
     // TASK: Reorder the nodes so that they are in order
         // 1(head2) <==> 2 <==> 3 <==> 4(tail2)
-    DLNode *temp2 = head -> next; // goes to the 3
-    temp2 = head -> next -> next; // 
+    // DLNode *temp2 = head -> next; // goes to the 3
+    // temp2 = head -> next -> next; // 
+    
     
 }
