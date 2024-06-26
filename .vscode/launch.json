@@ -8,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "c:/Documents/Github Projects/Summer CS2/Week 3",
-      "program": "c:/Documents/Github Projects/Summer CS2/Week 3/build/Debug/outDebug",
+      "cwd": "c:/Documents/Github Projects/Summer CS2/Week 4",
+      "program": "c:/Documents/Github Projects/Summer CS2/Week 4/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
