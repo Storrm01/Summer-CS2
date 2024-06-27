@@ -12,6 +12,15 @@ int main(){
 
     countdownR(0);
 
-    cout << findValR(arr, 4, 30);
+    // cout << findValR(arr, 4, 30);
+    // cout << endl;
+
+    helloR(10);
+
+    cout << rFunc(3, 2);
+    cout << endl;
+
+    cout << sumEvens(10);
+    cout << endl;
 
 }
