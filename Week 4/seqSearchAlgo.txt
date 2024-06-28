@@ -1,0 +1,41 @@
+Sequential Search Algorithm
+
+Step 1: keep track of my index, and start searching from index
+Step 2: check does the array at this index have our value?
+    -- if yes, we found it! return the current index
+    -- if NO, move index to the next value ("increment index")
+Step 3: if the index goes past the number of elements (i < n)
+    -- if Yes, ran out of elements. return -1
+    -- if No, we still have more to search, go back to Step 2
+
+Binary Search
+Ex: arr[12] = {-4, 0, 2, 12, 20, 21, 25, 27, 30, 100, 202, 399}
+Step 1: setup an index and start searching in the middle 
+        of the array (i = n/2)
+Step 2: check if the array at this index has our value  
+    -- if YES, return index
+    -- if NO, 
+        1. is the vlaue greater than our target value?
+             -- if YES, our value is somewhere between 0 and  the index
+                before our current index 
+        2. is the value less than our target value?
+             -- if YES, our value is somewhere between the next
+                value and the end of the array
+Step 3: are there any values left to check?
+    -- if YES, restart our Binary Search with the new range of 
+       indexes from Step 2
+    -- if NO, the value isn't here. return -1 
+
+
+
+Bubble Sort
+EX array: arr[5] = {1, 4, 2, 70, 3}
+comeplete n-1iterations of the following:
+    1 iteration of bubble sort
+    Step 1: start with the first two values in the array
+    Step 2: Check if they are in order
+        -- if Yes, do nothing
+        -- if No, swap them
+    Step 3: is the second value at the end of the array?
+        -- if Yes, one iteration is done! (update n)
+        -- if No, move the first and second indexes forward
