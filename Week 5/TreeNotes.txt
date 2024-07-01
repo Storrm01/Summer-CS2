@@ -1,0 +1,45 @@
+Binary Tree
+    has one entry point *root*
+    made up of nodes
+    each node can have up to 2 *children*
+
+Write this on reference sheet
+Some tree jargon...
+    root - the top of the tree (only one per tree)
+    child - node below a parent node 
+        (directly connected to current "parent" node)
+    leaf node - a node with NO children
+    level - level of node is # of connections needed to reach this node from root
+    height - the maximum # of connections needed to reach *any* node in the tree (if there is a nullptr at the beginning, "-1")
+
+Binary Search Tree  
+    Binary Tree
+    AND any child on the left should be LESS than parent
+    AND any child on the right should be GREATER than parent
+    
+
+    ... ALL NODES on the left of the node must be LESS than
+    ... ALL NODES on the right must be GREATER than
+
+How to Build your Own Binary Search Tree 
+1. Take an array of values
+    EX: arr[8] = {6, 0, 4, 7, 10, 8, 2, 5}
+2. Take each value in the array *in order listed*
+    and insert them into the tree
+insert -- 
+    1. Start at the root
+    2. As long as we dont find a nullptr 
+    3. Check if number is greater than or less than current
+    4. Once we find a nullptr, put our value here
+
+                 6  <== root 
+            /         \
+           0           7
+            \           \
+             4           10
+            / \          /    
+           2   5        8 
+
+{6, 0, 4, 7, 10, 8, 2, 5}
+What does the tree look like?
+{0, 2, 4, 5, 6, 7,8, 10}
