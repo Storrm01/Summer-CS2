@@ -15,4 +15,6 @@ int main(){
     print(root);
 
     printMax(root);
+
+    cout << findVal(root, 5) << endl;
 }
